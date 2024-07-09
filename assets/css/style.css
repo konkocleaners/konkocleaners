@@ -421,7 +421,7 @@ h6 {
 }
 
 #hero .container {
-  text-align: center;
+  text-align: start;
 }
 
 #hero h2 {
@@ -439,7 +439,7 @@ h6 {
 
 #hero p {
   width: 80%;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 30px 0;
   color: #fff;
 }
 
@@ -553,6 +553,38 @@ section {
 }
 
 .section-header h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #18d26e;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-header h4 {
+  font-size: 28px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 550;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-header h4::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-header h4::after {
   content: "";
   position: absolute;
   display: block;
